@@ -1,0 +1,69 @@
+.sidebar{
+    flex:3;
+    border:solid red 2px;
+    margin:9px;
+    border-radius: 12px;
+    color: whitesmoke;
+    /* Our topbar is 50 px so to avoid overflow of the page we calc the height */
+    height: calc(100vh - 59px);
+    background-color: rgb(27, 27, 27);
+    /* add a scrolling just for the side bar so the name of the friend overflow the entire page */
+     overflow-y: scroll;
+}
+/* webkit allows to acess specific properties of an element */
+/* webkit will only work in the broweser which suport it others will ignore this line of code */
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(194, 190, 190);
+}
+::-webkit-scrollbar-thumb{
+    background-color: gray;
+}
+.sidebarWrapper{
+    padding: 20px;
+}
+.sidebarList{
+    padding: 0;
+    margin:0;
+    /* remove the bullet point style */
+    list-style: none;
+}
+.sidebarListItem{
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.sidebarIcon{
+    margin-right: 15px;
+}
+.sidebarButton{
+    width:150px;
+    border:none;
+    padding :10px;
+    border-radius:5px;
+    font-weight: 500;
+}
+.sidebarHr{
+    margin:20px 0;
+}
+.sidebarFriendList{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.sidebarFriend{
+    display:flex;
+    align-items: center;
+    margin-bottom:15px ;
+}
+.sidebarFriendImg{
+    width:32px;
+    height: 32px;
+    border-radius:50%;
+    /* to fit the image in the circle so it dosen't look bad */
+    object-fit:cover;
+    margin-right: 10px;
+}
