@@ -3,12 +3,14 @@
     border:solid red 2px;
     margin:9px;
     border-radius: 12px;
-    color: whitesmoke;
+    /* color: whitesmoke; */
     /* Our topbar is 50 px so to avoid overflow of the page we calc the height */
     height: calc(100vh - 59px);
-    background-color: rgb(27, 27, 27);
+    /* background-color: rgb(27, 27, 27); */
     /* add a scrolling just for the side bar so the name of the friend overflow the entire page */
      overflow-y: scroll;
+     position: sticky;
+     top:30px;
 }
 /* webkit allows to acess specific properties of an element */
 /* webkit will only work in the broweser which suport it others will ignore this line of code */

@@ -38,30 +38,9 @@ export default function Sidebar() {
         {/* hr addes a line  */}
         <hr className="sidebarHr" />
         <ul className="sidebarFriendList">
-            <li className="sidebarFriend">
-                <img className="sidebarFriendImg" src="/assests/person/elephant.jpg" alt=" "/>
-                <span className="sidebarFriendName">Brian Dos</span>
-            </li>
-            <li className="sidebarFriend">
-                <img className="sidebarFriendImg" src="/assests/person/elephant.jpg" alt=" "/>
-                <span className="sidebarFriendName">Brian Dos</span>
-            </li>
-            <li className="sidebarFriend">
-                <img className="sidebarFriendImg" src="/assests/person/elephant.jpg" alt=" "/>
-                <span className="sidebarFriendName">Brian Dos</span>
-            </li>
-            <li className="sidebarFriend">
-                <img className="sidebarFriendImg" src="/assests/person/elephant.jpg" alt=" "/>
-                <span className="sidebarFriendName">Brian Dos</span>
-            </li>
-            <li className="sidebarFriend">
-                <img className="sidebarFriendImg" src="/assests/person/elephant.jpg" alt=" "/>
-                <span className="sidebarFriendName">Brian Dos</span>
-            </li>
-            <li className="sidebarFriend">
-                <img className="sidebarFriendImg" src="/assests/person/elephant.jpg" alt=" "/>
-                <span className="sidebarFriendName">Brian Dos</span>
-            </li>
+           {Users.map((u)=>(
+            <CloseFriend key={u.id} user={u}/>
+           ))}
         </ul>
        </div>
     </div>
